@@ -1,0 +1,157 @@
+{
+    "businesses": [
+      {
+        "id": "cb6e2796-2d9d-4627-8ce1-4251ad5b271c",
+        "name": "Café Del Sol",
+        "description": "Un acogedor café con vistas al mar.",
+        "category": "Cafetería",
+        "location": {
+          "address": "123 Avenida del Mar, Ciudad Sol",
+          "latitude": 40.712776,
+          "longitude": -74.005974
+        },
+        "photos": [
+          "url_photo_1",
+          "url_photo_2"
+        ],
+        "contact": {
+          "phone": "+1234567890",
+          "email": "info@cafedelsol.com",
+          "website": "https://www.cafedelsol.com"
+        },
+        "membershipStatus": "active",
+        "promotions": [
+          {
+            "id": "af17f1d3-7ede-4ad6-b8a8-1f4579648a41",
+            "title": "Descuento del 20%",
+            "description": "20% de descuento en todas las bebidas este mes",
+            "validUntil": "2024-10-31T23:59:59Z"
+          }
+        ],
+        "reviews": [
+          {
+            "id": "339a3fc3-eb7c-4a03-96c2-3964fec84917",
+            "userId": "5bcd26fb-96bd-4e7f-8dbb-d8dec900de8a",
+            "rating": 5,
+            "comment": "Ambiente increíble y buena atención.",
+            "tags": ["Buena atención", "Ambiente agradable"],
+            "photos": ["url_review_photo_1"],
+            "createdAt": "2024-10-22T12:34:56Z"
+          }
+        ],
+        "analytics": {
+          "views": 1500,
+          "visits": 300,
+          "favorites": 45,
+          "reviewsCount": 25
+        }
+      }
+    ],
+    "users": [
+      {
+        "id": "5bcd26fb-96bd-4e7f-8dbb-d8dec900de8a",
+        "name": "Carlos Martínez",
+        "email": "carlos@example.com",
+        "location": {
+          "latitude": 40.712776,
+          "longitude": -74.005974
+        },
+        "favorites": [
+          "cb6e2796-2d9d-4627-8ce1-4251ad5b271c"
+        ],
+        "searchHistory": [
+          "Cafetería",
+          "Restaurantes cerca de mí"
+        ],
+        "recommendedBusinesses": [
+          "cb6e2796-2d9d-4627-8ce1-4251ad5b271c"
+        ],
+        "auth": {
+          "2faEnabled": true,
+          "lastLogin": "2024-10-20T08:22:00Z",
+          "tokenExpiry": "2024-10-20T09:22:00Z"
+        },
+        "security": {
+          "passwordHashed": "hash_value",
+          "role": "user",
+          "failedLoginAttempts": 0
+        }
+      }
+    ],
+    "payments": [
+      {
+        "id": "d05d030b-9ce7-4bbf-bae4-1ad6ed0ca76c",
+        "businessId": "cb6e2796-2d9d-4627-8ce1-4251ad5b271c",
+        "amount": 50.00,
+        "status": "completed",
+        "method": "credit_card",
+        "transactionDate": "2024-10-20T14:22:00Z",
+        "receipt": {
+          "url": "https://ubikoo.app.cubysoft.co.uk/payments/receipt/d05d030b-9ce7-4bbf-bae4-1ad6ed0ca76c"
+        }
+      }
+    ],
+    "notifications": [
+      {
+        "id": "6ad847de-59dd-48aa-ad39-7b677993d724",
+        "userId": "5bcd26fb-96bd-4e7f-8dbb-d8dec900de8a",
+        "message": "Tienes una nueva reseña en tu negocio",
+        "sentAt": "2024-10-23T10:10:10Z"
+      }
+    ],
+    "referrals": [
+      {
+        "id": "7a34fb13-0969-447d-8a9c-0be66a582db9",
+        "businessId": "cb6e2796-2d9d-4627-8ce1-4251ad5b271c",
+        "referredEmail": "newbusiness@example.com",
+        "status": "pending",
+        "createdAt": "2024-10-24T09:45:00Z"
+      }
+    ],
+    "categories": [
+      "Cafetería",
+      "Restaurante",
+      "Gimnasio",
+      "Tienda"
+    ],
+    "promotions": [
+      {
+        "id": "af17f1d3-7ede-4ad6-b8a8-1f4579648a41",
+        "businessId": "cb6e2796-2d9d-4627-8ce1-4251ad5b271c",
+        "title": "Descuento del 20%",
+        "description": "20% de descuento en todas las bebidas este mes",
+        "validUntil": "2024-10-31T23:59:59Z"
+      }
+    ],
+    "recommendations": [
+      {
+        "userId": "5bcd26fb-96bd-4e7f-8dbb-d8dec900de8a",
+        "recommendedBusinesses": [
+          "cb6e2796-2d9d-4627-8ce1-4251ad5b271c",
+          "uuid_business_2"
+        ]
+      }
+    ],
+    "security": {
+      "oauth": {
+        "clientId": "ubikoo_client_id",
+        "clientSecret": "ubikoo_client_secret",
+        "redirectUris": ["https://ubikoo.app.cubysoft.co.uk/callback"],
+        "scopes": ["read", "write", "admin"]
+      },
+      "rateLimiting": {
+        "maxRequestsPerMinute": 60
+      },
+      "cors": {
+        "allowedOrigins": [
+          "https://ubikoo.cubysoft.co.uk",
+          "https://ubikoo.app.cubysoft.co.uk"
+        ]
+      },
+      "hsts": {
+        "maxAge": 31536000,
+        "includeSubdomains": true
+      }
+    }
+  }
+  
